@@ -1,36 +1,36 @@
-# 🧠 Fraud Detection Using Machine Learning on the IEEE-CIS Dataset
+#  Fraud Detection Using Machine Learning on the IEEE-CIS Dataset
 
 This project presents a comparative analysis of multiple machine learning algorithms applied to the **IEEE-CIS Fraud Detection** dataset. It explores both performance and interpretability aspects using a range of models and Explainable AI (XAI) techniques.
 
 ---
 
-## 📌 Research Questions
+##  Research Questions
 
 - **RQ1:** How do traditional ML models perform on a highly imbalanced, real-world fraud detection dataset compared to their performance in published studies?
 - **RQ2:** Which model offers the best trade-off between predictive performance and interpretability?
 
 ---
 
-## 📚 Related Work
+##  Related Work
 
 Numerous works have benchmarked ML models for fraud detection, but most focus solely on improving accuracy and neglect **explainability**. Prior studies (Dornadula & Geetha, Varmedja et al., Thennakoon et al.) have evaluated models like Random Forests, MLPs, and SVMs but rarely incorporated **XAI** tools like SHAP or LIME. Our work fills this gap by combining high-performing models with interpretability techniques for financial accountability.
 
 ---
 
-## 🧪 Methodology
+##  Methodology
 
-### 🔎 Dataset
+###  Dataset
 - **Source:** [IEEE-CIS Fraud Detection (Kaggle)](https://www.kaggle.com/c/ieee-fraud-detection)
 - **Samples:** ~590,000 transactions
 - **Target:** `isFraud` (binary classification)
 
-### 🧼 Preprocessing
+### Preprocessing
 - Imputed missing values
 - Scaled numerical features
 - Encoded categorical variables
 - Used **SMOTE** and **class weighting** to address class imbalance
 
-### 🤖 Models Evaluated
+###  Models Evaluated
 - Logistic Regression
 - Random Forest
 - Naive Bayes
@@ -38,10 +38,10 @@ Numerous works have benchmarked ML models for fraud detection, but most focus so
 - Support Vector Machine (SVM)
 - XGBoost
 
-### 🎛️ Hyperparameter Tuning
+###  Hyperparameter Tuning
 Used **Grid Search** or **Random Search** with 5-fold cross-validation.
 
-### 📈 Evaluation Metrics
+###  Evaluation Metrics
 - Accuracy
 - Precision
 - Recall
@@ -49,7 +49,7 @@ Used **Grid Search** or **Random Search** with 5-fold cross-validation.
 
 ---
 
-## 🔍 Explainability Techniques
+##  Explainability Techniques
 
 To improve transparency and trust, the following **XAI tools** were used:
 - **SHAP** – Feature impact analysis
@@ -60,7 +60,7 @@ To improve transparency and trust, the following **XAI tools** were used:
 
 ---
 
-## 📊 Results Snapshot
+##  Results Snapshot
 
 | Model                  | Accuracy | Class | Precision | Recall | F1-Score |
 |------------------------|----------|-------|-----------|--------|----------|
@@ -79,7 +79,7 @@ To improve transparency and trust, the following **XAI tools** were used:
 
 ---
 
-## 🎯 Key Findings
+##  Key Findings
 
 - **Random Forest** and **XGBoost** offered the best overall performance in terms of accuracy and balanced precision/recall for the fraud class.
 - **Naive Bayes** and **Logistic Regression** struggled with the imbalanced class, showing high false negatives.
@@ -88,7 +88,7 @@ To improve transparency and trust, the following **XAI tools** were used:
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This study confirms that while tree-based models (Random Forest, XGBoost) provide excellent fraud detection performance, they must be complemented with interpretability tools to be viable in production. By integrating **XAI**, we bridge the gap between **performance** and **trust**, which is essential in financial applications.
 
